@@ -1,0 +1,6 @@
+{
+  "name": "AI Cyber Threat Sentinel",
+  "description": "Real-time AI-driven cybersecurity anomaly detection and threat sentinel with interactive Store Checkout Simulator for e-commerce transactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
