@@ -49,7 +49,7 @@ Depending on your distribution, install the required packages:
 
 **2. Clone and Run**
 ```bash
-git clone [https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git](https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git)
+git clone https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git
 cd AI-Cyber-Threat-Sentinel
 npm install
 npm run dev
