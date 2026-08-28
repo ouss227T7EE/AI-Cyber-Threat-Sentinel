@@ -36,27 +36,36 @@ An enterprise-grade Cybersecurity & Anti-Fraud system designed to protect e-comm
 
 ---
 
-## 🚀 Quick Start Guide
+## 🚀 Quick Start (Automated Setup)
 
-### 1. Clone the Repository
+### 🐧 For Linux (Smart Bash Script)
+Copy and paste this entire block into your terminal. This script will automatically detect your distribution, install the required packages, clone the repository, and start the server:
+
 ```bash
-git clone [https://github.com/YOUR_USERNAME/AI-Cyber-Threat-Sentinel.git](https://github.com/YOUR_USERNAME/AI-Cyber-Threat-Sentinel.git)
+#!/bin/bash
+
+# 1. Auto-detect OS and install dependencies
+if [ -f /etc/arch-release ]; then
+    echo "[+] Arch Linux detected. Installing dependencies..."
+    sudo pacman -S --needed nodejs npm git python --noconfirm
+elif [ -f /etc/debian_version ]; then
+    echo "[+] Debian/Ubuntu detected. Installing dependencies..."
+    sudo apt update && sudo apt install -y nodejs npm git python3
+else
+    echo "[!] Please ensure Node.js, npm, and Git are installed."
+fi
+
+# 2. Clone the project
+echo "[+] Cloning AI Sentinel Repository..."
+git clone [https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git](https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git)
+
+# 3. Install & Run
 cd AI-Cyber-Threat-Sentinel
-```
-
-### 2. Run Python ML Engine (CLI Mode)
-```bash
-pip install pandas scikit-learn colorama
-python main.py
-```
-
-### 3. Run Web Application
-```bash
+echo "[+] Installing Node packages..."
 npm install
-npm run dev
-```
 
----
+echo "[+] Starting the AI Sentinel Server..."
+npm run dev
 
 ## 📷 Dashboard Preview
 
