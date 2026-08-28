@@ -23,47 +23,50 @@ By utilizing Machine Learning (Isolation Forest) and real-time telemetry, the sy
 
 ---
 
-## 🚀 Quick Start (Automated Setup)
+## 🚀 Getting Started
 
-Follow the instructions below based on your Operating System to run the project locally.
+Follow the instructions below based on your Operating System to set up the environment and run the project locally.
 
-### 🐧 For Linux (Smart Bash Script)
-Copy and paste this entire block into your terminal. This script will automatically detect your distribution (Arch or Ubuntu/Debian), install the required packages, clone the repository, and start the server:
+### 🐧 For Linux
 
+**1. Install Prerequisites**
+Depending on your distribution, install the required packages:
+
+* **Arch Linux / Manjaro:**
+  ```bash
+  sudo pacman -S --needed nodejs npm git python
+  ```
+
+* **Debian / Ubuntu:**
+  ```bash
+  sudo apt update && sudo apt install -y nodejs npm git python3
+  ```
+
+* **Fedora / RHEL:**
+  ```bash
+  sudo dnf install nodejs npm git python3
+  ```
+
+**2. Clone and Run**
 ```bash
-#!/bin/bash
-
-# 1. Auto-detect OS and install dependencies
-if [ -f /etc/arch-release ]; then
-    echo "[+] Arch Linux detected. Installing dependencies..."
-    sudo pacman -S --needed nodejs npm git python --noconfirm
-elif [ -f /etc/debian_version ]; then
-    echo "[+] Debian/Ubuntu detected. Installing dependencies..."
-    sudo apt update && sudo apt install -y nodejs npm git python3
-else
-    echo "[!] Please ensure Node.js, npm, and Git are installed manually."
-fi
-
-# 2. Clone the project
-echo "[+] Cloning AI Sentinel Repository..."
-git clone https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git
-
-# 3. Install & Run
+git clone [https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git](https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git)
 cd AI-Cyber-Threat-Sentinel
-echo "[+] Installing Node packages..."
 npm install
-
-echo "[+] Starting the AI Sentinel Server..."
 npm run dev
 ```
 
 ---
 
 ### 🍏 For macOS
-The easiest way to install dependencies on macOS is using [Homebrew](https://brew.sh/):
+
+**1. Install Prerequisites** (Using [Homebrew](https://brew.sh/))
 ```bash
 brew install node git python
-git clone https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git
+```
+
+**2. Clone and Run**
+```bash
+git clone [https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git](https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git)
 cd AI-Cyber-Threat-Sentinel
 npm install
 npm run dev
@@ -72,10 +75,16 @@ npm run dev
 ---
 
 ### 🪟 For Windows
-You can use the modern Windows Package Manager (`winget`) in Command Prompt or PowerShell, or install tools manually:
+
+**1. Install Prerequisites**
+You can install dependencies manually from their official websites or use `winget` in Command Prompt / PowerShell:
 ```cmd
 winget install OpenJS.NodeJS Git.Git Python.Python.3.10
-git clone https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git
+```
+
+**2. Clone and Run**
+```cmd
+git clone [https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git](https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git)
 cd AI-Cyber-Threat-Sentinel
 npm install
 npm run dev
