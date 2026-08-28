@@ -1,25 +1,33 @@
-# 🛡️ AI Sentinel | Real-Time E-Commerce Threat Defense Engine
+# 🛡️ AI Sentinel | E-Commerce Threat Defense (PoC)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18.0-blue.svg)](https://reactjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-cyan.svg)](https://tailwindcss.com/)
-[![Machine Learning](https://img.shields.io/badge/AI-Isolation_Forest-orange.svg)](https://scikit-learn.org/)
+[![Machine Learning](https://img.shields.io/badge/AI-Anomaly_Detection-orange.svg)](https://scikit-learn.org/)
 
 ## 📖 About The Project
 
-**AI Sentinel** is an enterprise-grade Cybersecurity & Anti-Fraud dashboard designed specifically for E-Commerce platforms. It bridges the gap between **Cybersecurity and Economic/Financial Loss Prevention**. 
+**AI Sentinel** is a cybersecurity and anti-fraud proof-of-concept dashboard designed for e-commerce environments. It bridges the gap between Cybersecurity and Economic/Financial Loss Prevention. 
 
-By utilizing Machine Learning (Isolation Forest) and real-time telemetry, the system detects zero-day fraud tactics, bot swarms, and credential stuffing attacks without relying on static firewall rules, instantly calculating the **Revenue Protected ($)** in real-time.
+Using simulated e-commerce activity, the system demonstrates how Machine Learning principles (like Isolation Forest) can be applied to detect anomalous purchasing behaviors and estimate potential financial impact.
+
+---
+
+## ⚠️ Project Scope
+
+This project is a **university portfolio proof-of-concept**. 
+
+It uses simulated e-commerce activity and synthetic security events to demonstrate an AI-assisted anomaly detection workflow. It is not intended to replace a production fraud detection system, SIEM, IDS, or real-time security monitoring infrastructure.
 
 ---
 
 ## ✨ Key Features
 
-- 🧠 **Unsupervised Anomaly Detection:** Powered by Machine Learning to detect abnormal purchasing behaviors and bot traffic.
-- 💰 **Financial Impact Engine:** Directly maps cyber threats to business metrics, showing the exact monetary value of blocked fraudulent carts.
-- 🎯 **Store Checkout Simulator (Red Teaming):** A built-in mock e-commerce checkout page that allows you to configure and launch simulated "Bot Swarm" attacks to test the AI's response.
+- 🧠 **Unsupervised Anomaly Detection:** Detects anomalous behaviors associated with simulated fraud and bot activity.
+- 💰 **Financial Impact Engine:** Directly maps cyber threats to business metrics, estimating potential revenue protected from simulated fraudulent carts.
+- 🎯 **Store Checkout Simulator (Red Teaming):** A built-in mock e-commerce checkout page that allows you to configure and launch simulated "Bot Swarm" attacks to test the dashboard's response.
 - 💻 **Interactive DevSecOps Terminal:** A simulated command-line interface for IP forensics, deep packet inspection, and manual system overrides.
-- 🎨 **Enterprise UI/UX:** Built with a sleek, responsive dark mode utilizing React and Tailwind CSS.
+- 🎨 **Modern UI/UX:** Built with a sleek, responsive dark mode utilizing React and Tailwind CSS.
 
 ---
 
@@ -27,29 +35,32 @@ By utilizing Machine Learning (Isolation Forest) and real-time telemetry, the sy
 
 Follow the instructions below based on your Operating System to set up the environment and run the project locally.
 
+### 📋 Prerequisites
+Ensure you have the following installed on your machine:
+- **Node.js** (v18.0 or higher) and **npm**
+- **Git**
+
+---
+
 ### 🐧 For Linux
 
 **1. Install Prerequisites**
-Depending on your distribution, install the required packages:
-
 * **Arch Linux / Manjaro:**
   ```bash
-  sudo pacman -S --needed nodejs npm git python
+  sudo pacman -S --needed nodejs npm git
   ```
-
 * **Debian / Ubuntu:**
   ```bash
-  sudo apt update && sudo apt install -y nodejs npm git python3
+  sudo apt update && sudo apt install -y nodejs npm git
   ```
-
 * **Fedora / RHEL:**
   ```bash
-  sudo dnf install nodejs npm git python3
+  sudo dnf install nodejs npm git
   ```
 
 **2. Clone and Run**
 ```bash
-git clone https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git
+git clone [https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git](https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git)
 cd AI-Cyber-Threat-Sentinel
 npm install
 npm run dev
@@ -61,7 +72,7 @@ npm run dev
 
 **1. Install Prerequisites** (Using [Homebrew](https://brew.sh/))
 ```bash
-brew install node git python
+brew install node git
 ```
 
 **2. Clone and Run**
@@ -77,14 +88,14 @@ npm run dev
 ### 🪟 For Windows
 
 **1. Install Prerequisites**
-You can install dependencies manually from their official websites or use `winget` in Command Prompt / PowerShell:
+Use `winget` in Command Prompt / PowerShell, or install manually:
 ```cmd
-winget install OpenJS.NodeJS Git.Git Python.Python.3.10
+winget install OpenJS.NodeJS Git.Git
 ```
 
 **2. Clone and Run**
 ```cmd
-git clone https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git
+git clone [https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git](https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git)
 cd AI-Cyber-Threat-Sentinel
 npm install
 npm run dev
@@ -93,24 +104,29 @@ npm run dev
 ---
 
 ## 🌍 Accessing the Platform
-Once the terminal displays the success message, open your web browser and navigate to the local server URL:
+Once the server starts, open your web browser and navigate to:
 **👉 `http://localhost:5173`**
 
 ---
 
-## 📸 Screenshots & Previews
+## 📸 Screenshots
 
-*(Replace the links below with actual images of your project)*
+### The Main Dashboard & Financial Metrics
+![Dashboard Screenshot Placeholder](<img width="750" height="676" alt="image" src="https://github.com/user-attachments/assets/75d2a60e-c06e-419b-ade2-3db36da83e21" />
+)
 
-- `[Dashboard]` Real-time anomaly score visualizer & revenue metrics.
-- `[Attack Simulator]` Mock Checkout environment with Bot Swarm protocol configuration.
-- `[Interactive Shell]` Command-line interface for IP forensics.
+### Bot Swarm Attack Simulator
+![Attack Simulator Screenshot Placeholder](<img width="737" height="606" alt="image" src="https://github.com/user-attachments/assets/36fe769c-f293-42da-a3b0-95ceb569eba3" />)
+
+
+### Interactive Security Terminal
+![Terminal Screenshot Placeholder](<img width="722" height="630" alt="image" src="https://github.com/user-attachments/assets/0132bbe3-8b34-4072-9a89-e9811b82316e" />
+)
 
 ---
 
 ## 👨‍💻 Author & Architecture
-Developed to demonstrate the critical intersection of **Economic Security and Computer Science**. 
-If you encounter any issues or want to discuss the architecture, feel free to open an issue in this repository.
+Developed as an academic portfolio project demonstrating the intersection of Economic Security and Computer Science.
 
 ## 📝 License
 Distributed under the MIT License.
