@@ -112,16 +112,15 @@ Once the server starts, open your web browser and navigate to:
 ## 📸 Screenshots
 
 ### The Main Dashboard & Financial Metrics
-![Dashboard Screenshot Placeholder](<img width="750" height="676" alt="image" src="https://github.com/user-attachments/assets/75d2a60e-c06e-419b-ade2-3db36da83e21" />
-)
+![Dashboard Screenshot Placeholder]<img width="750" height="676" alt="image" src="https://github.com/user-attachments/assets/75d2a60e-c06e-419b-ade2-3db36da83e21" />
 
 ### Bot Swarm Attack Simulator
-![Attack Simulator Screenshot Placeholder](<img width="737" height="606" alt="image" src="https://github.com/user-attachments/assets/36fe769c-f293-42da-a3b0-95ceb569eba3" />)
+![Attack Simulator Screenshot Placeholder]<img width="737" height="606" alt="image" src="https://github.com/user-attachments/assets/36fe769c-f293-42da-a3b0-95ceb569eba3" />
 
 
 ### Interactive Security Terminal
-![Terminal Screenshot Placeholder](<img width="722" height="630" alt="image" src="https://github.com/user-attachments/assets/0132bbe3-8b34-4072-9a89-e9811b82316e" />
-)
+![Terminal Screenshot Placeholder] <img width="722" height="630" alt="image" src="https://github.com/user-attachments/assets/0132bbe3-8b34-4072-9a89-e9811b82316e" />
+
 
 ---
 
