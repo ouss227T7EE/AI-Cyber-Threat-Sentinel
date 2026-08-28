@@ -1,45 +1,34 @@
 # 🛡️ AI Sentinel | Real-Time E-Commerce Threat Defense Engine
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![React](https://img.shields.io/badge/React-18.0-blue.svg)](https://reactjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-cyan.svg)](https://tailwindcss.com/)
 [![Machine Learning](https://img.shields.io/badge/AI-Isolation_Forest-orange.svg)](https://scikit-learn.org/)
 
-An enterprise-grade Cybersecurity & Anti-Fraud system designed to protect e-commerce platforms from automated bot attacks, credential stuffing, and high-value fraudulent transactions using Machine Learning (**Isolation Forest**) and real-time behavioral telemetry.
+## 📖 About The Project
+
+**AI Sentinel** is an enterprise-grade Cybersecurity & Anti-Fraud dashboard designed specifically for E-Commerce platforms. It bridges the gap between **Cybersecurity and Economic/Financial Loss Prevention**. 
+
+By utilizing Machine Learning (Isolation Forest) and real-time telemetry, the system detects zero-day fraud tactics, bot swarms, and credential stuffing attacks without relying on static firewall rules, instantly calculating the **Revenue Protected ($)** in real-time.
 
 ---
 
-## 💡 Key Architectural Highlights
+## ✨ Key Features
 
-- **Financial Impact Engine:** Directly maps cyber threat mitigation to business metrics, calculating **Revenue Protected ($)** in real time.
-- **Unsupervised Anomaly Detection:** Uses `scikit-learn`'s **Isolation Forest** to detect zero-day fraud tactics without relying on static rules.
-- **Interactive Attack Simulator (Red Teaming):** Includes a mock e-commerce checkout interface equipped with a bot-swarm protocol injector to simulate realistic DDoS and fraud scenarios.
-- **Enterprise Dark SaaS Dashboard:** Built with React, TypeScript, and Tailwind CSS following strict responsive UI/UX principles.
-- **Simulated Interactive CLI:** Built-in web terminal for deep packet inspection and manual IP containment commands (`scan`, `block`, `status`).
-
----
-
-## 📐 System Architecture
-
-1. **Data Ingestion:** Collects session duration, cart values, and payment failure rates.
-2. **AI Processing:** Computes anomaly scores and isolates outliers (`contamination=0.04`).
-3. **Automated Response:** Triggers immediate IP containment and updates the financial protection metrics.
-
----
-
-## 🛠️ Tech Stack
-
-- **Backend / AI Core:** Python 3.10, Pandas, Scikit-Learn, SQLite3.
-- **Frontend / UX:** React, TypeScript, Tailwind CSS, Lucide Icons.
-- **Environment:** Compatible with Arch Linux, Codespaces, and Web Environments.
+- 🧠 **Unsupervised Anomaly Detection:** Powered by Machine Learning to detect abnormal purchasing behaviors and bot traffic.
+- 💰 **Financial Impact Engine:** Directly maps cyber threats to business metrics, showing the exact monetary value of blocked fraudulent carts.
+- 🎯 **Store Checkout Simulator (Red Teaming):** A built-in mock e-commerce checkout page that allows you to configure and launch simulated "Bot Swarm" attacks to test the AI's response.
+- 💻 **Interactive DevSecOps Terminal:** A simulated command-line interface for IP forensics, deep packet inspection, and manual system overrides.
+- 🎨 **Enterprise UI/UX:** Built with a sleek, responsive dark mode utilizing React and Tailwind CSS.
 
 ---
 
 ## 🚀 Quick Start (Automated Setup)
 
+Follow the instructions below based on your Operating System to run the project locally.
+
 ### 🐧 For Linux (Smart Bash Script)
-Copy and paste this entire block into your terminal. This script will automatically detect your distribution, install the required packages, clone the repository, and start the server:
+Copy and paste this entire block into your terminal. This script will automatically detect your distribution (Arch or Ubuntu/Debian), install the required packages, clone the repository, and start the server:
 
 ```bash
 #!/bin/bash
@@ -52,12 +41,12 @@ elif [ -f /etc/debian_version ]; then
     echo "[+] Debian/Ubuntu detected. Installing dependencies..."
     sudo apt update && sudo apt install -y nodejs npm git python3
 else
-    echo "[!] Please ensure Node.js, npm, and Git are installed."
+    echo "[!] Please ensure Node.js, npm, and Git are installed manually."
 fi
 
 # 2. Clone the project
 echo "[+] Cloning AI Sentinel Repository..."
-git clone [https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git](https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git)
+git clone https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git
 
 # 3. Install & Run
 cd AI-Cyber-Threat-Sentinel
@@ -66,10 +55,43 @@ npm install
 
 echo "[+] Starting the AI Sentinel Server..."
 npm run dev
+```
 
-## 📷 Dashboard Preview
+---
 
-*(Add your high-resolution screenshots here)*
+### 🍏 For macOS
+The easiest way to install dependencies on macOS is using [Homebrew](https://brew.sh/):
+```bash
+brew install node git python
+git clone https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git
+cd AI-Cyber-Threat-Sentinel
+npm install
+npm run dev
+```
+
+---
+
+### 🪟 For Windows
+You can use the modern Windows Package Manager (`winget`) in Command Prompt or PowerShell, or install tools manually:
+```cmd
+winget install OpenJS.NodeJS Git.Git Python.Python.3.10
+git clone https://github.com/ouss227T7EE/AI-Cyber-Threat-Sentinel.git
+cd AI-Cyber-Threat-Sentinel
+npm install
+npm run dev
+```
+
+---
+
+## 🌍 Accessing the Platform
+Once the terminal displays the success message, open your web browser and navigate to the local server URL:
+**👉 `http://localhost:5173`**
+
+---
+
+## 📸 Screenshots & Previews
+
+*(Replace the links below with actual images of your project)*
 
 - `[Dashboard]` Real-time anomaly score visualizer & revenue metrics.
 - `[Attack Simulator]` Mock Checkout environment with Bot Swarm protocol configuration.
@@ -77,6 +99,9 @@ npm run dev
 
 ---
 
-## 📝 License
+## 👨‍💻 Author & Architecture
+Developed to demonstrate the critical intersection of **Economic Security and Computer Science**. 
+If you encounter any issues or want to discuss the architecture, feel free to open an issue in this repository.
 
-Distributed under the MIT License. See `LICENSE` for more information.
+## 📝 License
+Distributed under the MIT License.
