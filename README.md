@@ -126,6 +126,14 @@ Once the server starts, open your web browser and navigate to:
 
 ## 👨‍💻 Author & Architecture
 Developed as an academic portfolio project demonstrating the intersection of Economic Security and Computer Science.
+My Contribution
+Designed the original project concept and user experience
+Defined the application's requirements and workflow
+Planned the system structure and features
+Directed the AI-assisted development process
+Tested, evaluated, and refined the final application
+AI-Assisted Developmen
+AI tools were used as development assistance during implementation. The concept, requirements, system design, feature selection, testing, and final integration were directed and evaluated by me.
 
 ## 📝 License
 Distributed under the MIT License.
